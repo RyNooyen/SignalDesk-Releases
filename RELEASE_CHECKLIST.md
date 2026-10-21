@@ -2,8 +2,8 @@
 
 - [ ] Build completed from the reviewed private-source commit.
 - [ ] Full CI, frozen smoke launch and clean-device acceptance passed.
-- [ ] Executable and any installer are Authenticode signed by the approved identity.
-- [ ] Signature is verified after packaging and before upload.
+- [ ] Release notes clearly disclose that the beta is unsigned and may trigger a
+      Windows Unknown Publisher or SmartScreen warning.
 - [ ] ZIP SHA-256 matches the published checksum file.
 - [ ] Bundle manifest hashes every payload file and records the exact version.
 - [ ] Corresponding Qt/PySide sources and third-party notices are attached.

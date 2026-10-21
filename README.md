@@ -19,9 +19,10 @@ Verify the ZIP before opening it:
 .\Verify-Download.ps1 -ZipPath .\SignalDesk-Windows-x64.zip -ChecksumPath .\SignalDesk-Windows-x64.zip.sha256
 ```
 
-The public launch build will be Authenticode signed. Confirm that Windows shows
-the expected verified publisher before running `SignalDesk.exe`. A valid checksum
-confirms file consistency; the Authenticode signature confirms publisher identity.
+The initial public beta is unsigned. Windows may show an Unknown Publisher or
+Microsoft Defender SmartScreen warning. Verify the published SHA-256 before
+opening the archive, and download only from this repository. A valid checksum
+confirms file consistency but does not establish publisher identity.
 
 SignalDesk currently supports paper practice and deliberate exchange-demo testing.
 It does not promise returns or imply exchange endorsement.
